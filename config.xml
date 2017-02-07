@@ -1,5 +1,5 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="es.parlamentodeandalucia.test" version="1.0.0">
-  <name>Test</name>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="es.parlamentodeandalucia.app" version="1.0.0">
+  <name>Parlamento de Andalucía</name>
   <description>Parlamento de Andalucía</description>
   <author email="a.vilches@parlamento-and.es">Parlamento de Andalucía</author>
   <content src="index.html"/>
@@ -43,11 +43,13 @@
   <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>
   <gap:plugin name="org.apache.cordova.vibration" source="npm"/>
   <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>
-  
+
+  <gap:plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+
   <icon src="icon.png"/>  
   
   <plugin name="cordova-plugin-whitelist"  source="npm" />    
-  <access origin="*" />
+  <access origin="*" browserOnly="true"/>
   <allow-navigation href="*" />
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
