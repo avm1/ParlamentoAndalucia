@@ -17,6 +17,8 @@
 
             var output = '<h1>ÚLTIMAS NOTICIAS</h1>';
 
+            webView.getSettings().setBuiltInZoomControls(true);
+
             for(var i=0;i<data.items.length;++i){
 
                 output += '<p><h2><a href="' +
