@@ -2,19 +2,47 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Noticias</title>         
+        <title>Noticias</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
     </head>
 
 <body>
-
+<div id="content"></div>
    
 <script type="text/javascript">
-    
-    window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actualidad/comunicadosdeprensa.do', '_blank', 'location=yes');    
+    var content = document.getElementById('content');
 
+    function showFeed(data){
+        if(data.status == 'ok'){
+
+            var output = '<h1>ÚLTIMAS NOTICIAS</h1>';
+
+            for(var i=0;i<data.items.length;++i){
+
+                output += '<p><h2><a href="' +
+                data.items[i].link + '" >' +
+                data.items[i].title + '</h2></a></p>';
+            }
+
+            content.innerHTML = output;
+
+        }
+
+    }
+
+
+    $(document).on('mousedown','a', function(e) {
+            e.preventDefault();
+            var elem = $(this);
+            var url = elem.attr('href');
+            if (url.indexOf('http://') !== -1) {
+                window.open(url, '_system');
+            }
+    });
     
 </script>
-
+<script type="text/javascript"
+        src="https://api.rss2json.com/v1/api.json?callback=showFeed&rss_url=http%3A%2F%2Fwww.parlamentodeandalucia.es%2Fwebdinamica%2Fportal-web-parlamento%2Futilidades%2Fsindicacionrss.do%3Fcontenido%3DNoticias"></script>
 
 </body>
 </html>
