@@ -31,7 +31,7 @@
     }
 
 
-    $(document).on('mousedown','a', function(e) {
+    $(document).on('click','a', function(e) {
             e.preventDefault();
             var elem = $(this);
             var url = elem.attr('href');
@@ -39,7 +39,7 @@
                 window.open(url, '_system');
             }
     });
-    
+
 </script>
 <script type="text/javascript"
         src="https://api.rss2json.com/v1/api.json?callback=showFeed&rss_url=http%3A%2F%2Fwww.parlamentodeandalucia.es%2Fwebdinamica%2Fportal-web-parlamento%2Futilidades%2Fsindicacionrss.do%3Fcontenido%3DNoticias"></script>
