@@ -37,18 +37,18 @@
   <gap:plugin name="org.apache.cordova.file-transfer" source="npm"/>
   <gap:plugin name="org.apache.cordova.geolocation" source="npm"/>
   <gap:plugin name="org.apache.cordova.globalization" source="npm"/>
-  <gap:plugin name="org.apache.cordova.inappbrowser" source="npm"/>
+  
   <gap:plugin name="org.apache.cordova.media" source="npm"/>
   <gap:plugin name="org.apache.cordova.network-information" source="npm"/>
   <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>
   <gap:plugin name="org.apache.cordova.vibration" source="npm"/>
   <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>
-  
+
   <icon src="icon.png"/>  
   
   <plugin name="cordova-plugin-whitelist"  source="npm" />    
   <access origin="*" browserOnly="true"/>
-    
+
   <allow-navigation href="*" />
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
