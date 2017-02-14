@@ -44,6 +44,10 @@
   <gap:plugin name="org.apache.cordova.vibration" source="npm"/>
   <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>
   
+  <feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+  </feature>
+    
   <icon src="icon.png"/>  
   
   <plugin name="cordova-plugin-whitelist"  source="npm" />    
