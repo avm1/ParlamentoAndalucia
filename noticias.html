@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Noticias</title> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <meta name='viewport' content='initial-scale=1.0,maximum-scale=10.0'/>       
     </head>
 
 <body>
@@ -29,17 +29,6 @@
         }
 
     }
-
-
-    $(document).on('click','a', function(e) {
-            e.preventDefault();
-            var elem = $(this);
-            var url = elem.attr('href');
-            if (url.indexOf('http://') !== -1) {
-                window.open(url, '_system');
-            }
-    });
-
 </script>
 <script type="text/javascript"
         src="https://api.rss2json.com/v1/api.json?callback=showFeed&rss_url=http%3A%2F%2Fwww.parlamentodeandalucia.es%2Fwebdinamica%2Fportal-web-parlamento%2Futilidades%2Fsindicacionrss.do%3Fcontenido%3DNoticias"></script>

@@ -12,7 +12,7 @@
   <preference name="orientation" value="default"/>
   <preference name="target-device" value="universal"/>
   <preference name="fullscreen" value="true"/>
-  <preference name="webviewbounce" value="false"/>
+  <preference name="webviewbounce" value="true"/>
   <preference name="prerendered-icon" value="true"/>
   <preference name="stay-in-webview" value="false"/>
   <preference name="ios-statusbarstyle" value="black-opaque"/>
@@ -43,12 +43,11 @@
   <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>
   <gap:plugin name="org.apache.cordova.vibration" source="npm"/>
   <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>
-
+  
   <icon src="icon.png"/>  
   
   <plugin name="cordova-plugin-whitelist"  source="npm" />    
-  <access origin="*" browserOnly="true"/>
-
+  <access origin="*"/>
   <allow-navigation href="*" />
   <allow-intent href="http://*/*" />
   <allow-intent href="https://*/*" />
