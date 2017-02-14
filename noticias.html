@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Noticias</title> 
-        <meta name='viewport' content='initial-scale=1.0,maximum-scale=10.0'/>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=10.0"/>   
 
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>    
     </head>
@@ -22,7 +22,7 @@
             for(var i=0;i<data.items.length;++i){
 
                 output += '<p><h2><a href="#" onclick="window.open("' + 
-                data.items[i].link + '", "_blank", "location=yes");">' +
+                data.items[i].link + '\', \'_blank\', \'location=yes\'');">' +
                 data.items[i].title + '</a></h2></p>';
             
             }   
