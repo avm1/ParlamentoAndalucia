@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Parlamento de Andalucía</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=10.0"/>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script> 
     </head>
 
 <body>
@@ -21,8 +22,7 @@
 
                 output += '<p><h2><a href="#" onclick="window.open(\'' + 
                 data.items[i].link + '\',\'_blank\',\'location=yes\');">' +
-                data.items[i].title + 
-                data.items[i].description + '</h2></a></p>';
+                data.items[i].title + '</h2></a></p>';
 
             }
 
