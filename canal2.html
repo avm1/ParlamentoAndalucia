@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">  	
+  	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <title>Radio Parlamento de Andalucía</title>
+    
+<style type="text/css">		
+	
+	canal{
+		font-family: Times, Arial, Helvetica, sans-serif; 
+		font-size: 2em;
+		color: green;		
+		background-color: white;			 
+		}
+	
+	IMG.centrado{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border:none;
+      }
+
+    button {
+		background: green;
+		border-radius: 10px;
+		font-size: 1em;
+		margin: 4%;
+		padding: 1em;
+		width: 40%;
+	}
+
+	button:last-of-type {
+		background: red;
+	}
+      
+</style>    
+</head>
+
+<body>	
+	<img src="logo.png" alt="Parlamento de Andalucía"  width="300" height="70" class="centrado">              
+    <p align="center"><canal>Canal 2</canal></p>
+    <hr style="color: green;" />
+
+    <audio id="miAudio" src="http://193.147.254.64:1935/parlamento2/_definst_/parlamento2.stream/playlist.m3u8">
+    	Your browser does not support the video tag.
+    </audio>
+
+	<button onClick="reproducir()"> Reproducir </button>
+	<button onClick="detener()"> Detener </button>
+	<script>
+		function reproducir(){
+			var audio = document.getElementById("miAudio");
+			audio.play();
+		}
+
+		function detener(){
+			var audio = document.getElementById("miAudio")
+			audio.pause();
+	}</script>
+	
+      
+</body>
+</html>

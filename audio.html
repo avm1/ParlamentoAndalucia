@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+  	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css"/>
+  	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+    <title>Radio Parlamento de Andalucía</title>
+    
+<style type="text/css">	
+	
+	titulo1{
+		font-family: Times, Arial, Helvetica, sans-serif; 
+		font-size: 2.2em;
+		color: blue;		
+		background-color: white;			 
+		}
+	
+	IMG.centrado{
+      	display: block;
+      	margin-left: auto;
+      	margin-right: auto;
+      	border:none;
+     	}
+
+    
+	button {
+		border-radius: 108px 108px 108px 108px;
+	    -moz-border-radius: 108px 108px 108px 108px;
+	    -webkit-border-radius: 108px 108px 108px 108px;
+		border: 8px solid #1ddeb7;
+		color: white;
+		background: blue;
+		font-size: 1.5em;
+		margin: 4%;
+		padding: 0.5em;
+		width: 40%;
+		display: block;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+      
+</style>    
+</head>
+
+<body>	
+	<img src="logo.png" alt="Parlamento de Andalucía"  width="300" height="70" class="centrado">
+    
+    <p align="center"><titulo1 id="fecha"></titulo1></p>
+    <hr style="color: green;" />        
+	
+	<button onClick=window.location.href="canal1.html"> Canal 1 </button>
+	<button onClick=window.location.href="canal2.html"> Canal 2 </button>
+	<button onClick=window.location.href="canal3.html"> Canal 3 </button>
+	<button onClick=window.location.href="canal4.html"> Canal 4 </button>
+      
+</body>
+</html>
+
+
+<!-- ------------------------------------------------------------------------------- -->
+<script>      
+	var fecha = new Date();
+    var month = new Array();
+	month[0] = "Enero";
+	month[1] = "Febrero";
+	month[2] = "Marzo";
+	month[3] = "Abril";
+	month[4] = "Mayo";
+	month[5] = "Junio";
+	month[6] = "Julio";
+	month[7] = "Agosto";
+	month[8] = "Septiembre";
+	month[9] = "Octobre";
+	month[10] = "Noviembre";
+	month[11] = "Diciembre";
+	var mes = month[fecha.getMonth()];
+	var dia = fecha.getDate();
+    var ano = fecha.getFullYear();  
+                
+    document.getElementById("fecha").innerHTML = dia + " de " + mes + " de " + ano;      
+</script>
