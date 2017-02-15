@@ -24,11 +24,10 @@
 
                 output += '<p><h2><a href="#" onclick="window.open(\'' + 
                 data.items[i].link + '\',\'_system\',\'location=yes\');" style="text-decoration: none">' +
-                '<font color="red">' + data.items[i].title + '</font>' +
-                '<font color="red">' + data.items[i].description + '</font>' +
+                '<p><font color="red">' + data.items[i].title + '</font></p>' +
+                '<font color="green">' + data.items[i].description + '</font>' +
                 '</a></h2></p>';   
             }
-
 
             content.innerHTML = output;
 
