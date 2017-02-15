@@ -10,6 +10,8 @@
 <body>
 <div id="content"></div>
 
+<style type="text/css">a {text-decoration: none}</style>
+
 <script type="text/javascript">
     var content = document.getElementById('content');
 
@@ -18,13 +20,11 @@
 
             var output = '<h1>AGENDA SEMANAL</h1>';
 
-            for(var i=0;i<data.items.length;++i){
+            for(var i=0;i<data.items.length;++i){           
 
-                output += '<p><h3><a href="#" onclick="window.open(\'' + 
-                data.items[i].link + '\',\'_blank\',\'location=yes\');">' +
-                data.items[i].title + 
-                data.items[i].description + '</a></h3></p>';                
-
+                output += '<p><h2><a href="#" onclick="window.open(\'' + 
+                data.items[i].link + '\',\'_system\',\'location=yes\');" style="text-decoration: none">' +
+                data.items[i].title + '</h2></a></p>';   
             }
 
 
